@@ -1,0 +1,40 @@
+#contacts_block h1{
+	margin-top: 50px;
+	margin-left: 10%;
+	color: white;
+}
+#contacts_block{
+	margin-top: 30px !important;
+	margin-left: 4% !important;
+	margin-right: 4% !important;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+#yandex_map{
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+#con_contact_information li{
+	margin-top: 5px;
+	list-style-type: none;
+	color: white;
+}
+#con_contact_information li a{
+	color: white;
+}
+#con_contact_information span{
+	margin-right: 3px;
+	margin-top: -4px;
+}
+
+#con_socials li{
+	display: inline-block;
+	margin-right: 5px;
+	color: white;
+	font-size: 20px;
+	list-style-type: none;
+}
+#con_socials li img{
+	border-radius: 5px;
+	width: 40px;
+}

@@ -1,0 +1,155 @@
+body{
+	min-width: 300px;
+	background-color: black;
+	background-repeat: repeat-y;
+	background-position: 10% 10%;
+	background-image: url('/images/girl9.jpg');
+	background-attachment: fixed;
+}
+
+@media  (min-width: 801px ){
+	body{
+		background-size: 100% !important;
+	}
+}
+@media (max-width: 800px) and (min-width: 501px) {
+	body{
+		background-size: 140% !important;
+		
+	}
+}
+@media (max-width: 500px)  {
+	body{
+		background-size: 200% !important;
+		
+	}
+}
+.grid{
+	margin: 0 !important;
+}
+
+
+
+#upstair{
+	padding-top: 3px;
+	padding-bottom: 3px;
+	background-color: black;
+	color: white;
+	
+	/*font-family: "book antiqua", "bookman old style" !important;*/
+}
+.head_functions{
+	text-align: center;
+}
+.mif-wifi-full{
+	color: rgba(70, 230, 70, 1)
+}
+#shedule{
+	margin-top: 5px;
+}
+#visa_master{
+	height: 25px;
+	margin-top: 3px;
+	padding: 0px;
+}
+
+
+#home_block{
+	height: 155px;
+	background-color: rgba(0, 0, 0, 0.4);
+	color: red;
+}
+
+#home_block img{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	height: 145px;
+	margin-top: 5px;
+	margin-left: 2.95%;
+}
+#promo{
+	float: right;
+	margin-right: 8%;
+}
+#menu{
+	font-family: "book antiqua", "bookman old style" !important;
+	margin-left: 3%;
+	background-color: rgba(0, 0, 0, 0);
+}
+#afisha{
+	background-color: rgb(253,127,17);
+}
+.main_menu{
+	
+}
+.main_menu ul li a{
+	background-color: rgba(255, 255, 255, 0.0) !important;
+}
+.main_menu ul li:hover {
+	color: black;
+	background-color: rgba(0, 0, 0, 0.5) !important;
+}
+.main_menu ul{
+		
+}
+.main_menu ul li{
+	margin-top: 1px;
+	background-color: black;
+}
+
+@media  (min-width: 801px ) {
+		
+		.main_menu{
+			width: 93px !important;
+			height: 93px !important;
+		}
+		.main_menu>a{
+			padding: 0px !important;
+			position: relative !important;
+			text-align: center !important;
+			width: 100% !important;
+			height: 100% !important;
+			font-size: 14px !important;
+		}
+		.main_menu a img{
+			position: relative !important;
+			top: 10px !important;
+			width: 50% !important;
+		}
+		.main_menu ul{
+			margin-left: -50px !important;
+		}
+		
+		.main_menu ul li a{
+			text-align: center !important;
+			padding: 10px !important;
+		}
+		
+		.hover_elem:hover img{
+			-webkit-transform-style: preserve-3d;
+			-moz-transform-style: preserve-3d;
+			-ms-transform-style: preserve-3d;
+			-o-transform-style: preserve-3d;
+			transform-style: preserve-3d;
+			transition: transform 0.7s;
+			transform: rotateY( 180deg );
+		}
+		a.dropdown-toggle::before{
+			display: none !important;
+		}
+}
+
+
+
+
+@media  (max-width: 800px ) { 
+	.main_menu a img{
+		display: none;
+		position: absolute;
+		width: 0%;
+	}
+	br{
+		display: none;
+	}
+	
+}
