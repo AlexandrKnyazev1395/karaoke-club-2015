@@ -24,6 +24,20 @@
 	background-color: rgba(0, 0, 0, 0.5);
 	
 }
+#events_block h1{
+	font-weight: 400;
+	font-size: 30px;
+	margin-top: 50px;
+	color: white;
+}
+#events_block h1 a{
+	color: white;
+	border-bottom: 1px solid white;
+}
+#events_block h1 a:hover{
+	color: blue;
+	
+}
 @media  (max-width: 500px ){
 	#events_block{
 		margin-left: 0% !important;
@@ -32,28 +46,28 @@
 }
 
 @media  (min-width: 861px ){
-	#events_block h1{
+	#events_block h2{
 		
 		margin-top: 20px;
 		font-size: 30px;
 	}
 }
 @media (max-width: 860px) and (min-width: 681px) {
-	#events_block h1{
+	#events_block h2{
 		font-size: 24px;
 	}
 }
 
 @media  (max-width: 680px){
-	#events_block h1{
+	#events_block h2{
 		font-size: 20px;
 	}
 }
 
 
-#events_block h1{
-	
+#events_block h2{
 	color: white;
+	font-weight: 400;
 }
 #events_block p{
 	margin-top: 20px;
@@ -84,14 +98,14 @@
 		text-align: left !important
 	}
 }
-#event_date{
+.event_date{
 	margin-top: -10px;
 	float: right;
 	color: white;
 	font-size: 15px;
 	letter-spacing: 1.7px;
 }
-#event_date span{
+.event_date span{
 	margin-top: -3px;
 	margin-right: 6px;
 }
@@ -144,6 +158,9 @@
 	font-size: 14px;
 	color: white;
 	cursor: pointer;
+}
+#calendar a{
+	color: white;
 }
 
 @media  (min-width: 1300px ){
@@ -204,4 +221,7 @@
 	text-align: center !important;
 	-webkit-user-select: none;
 	-moz-user-select: none;
+}
+.event_basic{
+	display: none;
 }

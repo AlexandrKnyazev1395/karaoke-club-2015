@@ -1,0 +1,10 @@
+//определение максимальной даты
+    var max_date = 0;
+    var max_date_value = new Date(1990,0,0).valueOf();
+    for(var i = 0; i<all_events_dates.length; i++){
+        var event_date = new Date(all_events_dates[i]).valueOf();
+        if(max_date_value<event_date){
+            max_date_value = event_date;
+            max_date = all_events_dates[i];
+        }
+    }

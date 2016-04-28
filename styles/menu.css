@@ -1,16 +1,23 @@
 body{
-	background-image: url('/images/моцарт фон.jpg');
+	background-image: url('/images/mozart_back.jpg');
 }
+#menu_block{
+	margin-top: 40px !important;
+	margin-left: 4% !important;
+	margin-right: 4% !important;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
 #menu_book{
 	margin-top: 30px;
 	min-height: 400px;
 	background-image: url('/menu/book.png');
 	background-size: 100% 100%;
 }
+
 #list_menu{
 	padding: 10px;
-	width: 40%;
-	
+	width: 38%;
 	margin-top: 20px;
 	list-style-type: none;
 	font-family: "book antiqua", "bookman old style" !important;
@@ -19,7 +26,7 @@ body{
 
 	padding-top: 8px;
 	padding-bottom: 4px;
-	padding-left: 15px;
+	padding-left: 10px;
 	margin-bottom: 20px;
 	font-size: 20px;
 	cursor: pointer;
@@ -30,4 +37,57 @@ body{
 }
 #list_menu li a{
 	color: rgb(55,12,0); 
+}
+
+#menu_contact_information{
+	margin-top: 60px;
+	padding-left: 20px !important;
+	margin-bottom: 10px;
+}
+
+#menu_contact_information li{
+	margin-top: 10px;
+	list-style-type: none;
+	color: white;
+}
+#menu_contact_information li a{
+	color: white;
+}
+#menu_contact_information span{
+	margin-right: 3px;
+	margin-top: -4px;
+}
+#menu_socials{
+	padding-left: 20px !important;
+	margin-bottom: 30px !important;
+}
+
+#menu_socials li{
+	display: inline-block;
+	margin-right: 5px;
+	color: white;
+	font-size: 20px;
+	list-style-type: none;
+}
+#menu_socials li img{
+	border-radius: 5px;
+	width: 40px;
+}
+#link_map{
+	text-decoration: underline;
+}
+#link_download_menu{
+	padding-left: 25px !important;
+	text-decoration: underline;
+}
+#top{
+	bottom: 0;
+	cursor: pointer;
+	display: none;
+	font-size: 250%;
+	position: fixed;
+	color: white;
+	right: 0;
+	margin-right: 6%;
+	margin-bottom: 40px;
 }

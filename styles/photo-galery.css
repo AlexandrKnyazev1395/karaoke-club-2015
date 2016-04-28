@@ -1,3 +1,6 @@
+body{
+  background-image: url('/images/mozart_back.jpg');
+}
 .photos{cursor:pointer;}
 
 /* Glisse: Overlay */
