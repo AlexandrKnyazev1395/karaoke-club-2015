@@ -116,6 +116,7 @@
             plugin.els['controlLegend'] = $(document.createElement('span')).attr('class','glisse-legend');
             plugin.els['controlPrev']   = $(document.createElement('span')).attr('class','glisse-prev')
                                             .append($(document.createElement('a')).html('&#60;').attr("href", "#"));
+            plugin.els['download']       = $(document.createElement('a')).attr('id','glisse-download_image').text('Скачать фото');
 
             // Add structure
             plugin.els['overlay'].append(plugin.els['spinner']);
@@ -127,7 +128,8 @@
                     plugin.els['overlay'],
                     plugin.els['close'],
                     plugin.els['content'],
-                    plugin.els['controls']
+                    plugin.els['controls'],
+                    plugin.els['download']
                 );
             $('body').append(plugin.els['wrapper']);
 
@@ -203,7 +205,7 @@
             spinner(true);
             var img = $('<img/>',{src: pic}).appendTo(plugin.els['content']);
             plugin.els['content'].css({ backgroundImage: 'url("'+pic+'")'});
-
+            plugin.els['download'].attr('href', pic).prop('download', pic);
             img.load(function() {
                 img.remove();
                 spinner(false);

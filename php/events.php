@@ -1,8 +1,6 @@
 <?php
 
-	mysql_connect("localhost", "root", "") or die (mysql_error ());
-	// Выбрать БД
-	mysql_select_db("mozart") or die(mysql_error());
+	include "my_db.php";
 
 	//sql-запрос - выбираем ивенты, дата которых больше или равна сегодняшней 
 	//( CURDATE - текущая дата) ASC - в порядке возрастания

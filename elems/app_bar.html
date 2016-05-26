@@ -4,14 +4,30 @@
             <div class="cell colspan10">
                 <div id="menu" class="app-bar darcula" data-role="appbar">
                     <ul class="app-bar-menu">
-                        <li id="afisha" class="main_menu"><a href="events.html"><img src="menu_icons/people.png" alt=""><br>Афиша</a></li>
-                        <li class="main_menu bg-red"><a href="about.html"><img src="menu_icons/about.png" alt=""><br>О ресторане</a>
+                        <li data-flexorder="1" id="afisha" class="main_menu"><a href="events.html"><img src="menu_icons/people.png" alt=""><br>Афиша</a></li>
+                        <li data-flexorder="4" class="main_menu bg-red"><a href="" class="dropdown-toggle"><img src="menu_icons/about.png" alt=""><br>О ресторане</a>
+                            <ul class="d-menu" data-role="dropdown">
+                                <li><a href="/our_history.html">История, коллектив</a></li>
+                                <li class="events_menu"><a href="" class="dropdown-toggle">Мероприятия, торжества</a>
+                                    <ul class="d-menu" data-role="dropdown">
+                                        <li><a href="/weddings.html">Свадьбы</a></li>
+                                        <li><a href="/birthdays.html">Дни рождения</a></li> 
+                                        <li><a href="/girls-party.html">Девичники</a></li>
+                                        <li><a href="/art-party.html">ART-вечеринки</a></li>
+                                        <li><a href="/gala-evening.html">Гала-ужин</a></li>
+                                        <li><a href="/furchet.html">Фуршет</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="/actions.html">Акции</a></li>
+                                <li><a href="/interior.html">Интерьер</a></li>
+                            </ul>
                         </li>
-                        <li class="main_menu bg-darkMagenta"><a href="rules.html"><img src="menu_icons/rules.png" alt=""><br>Правила</a></li>
-                        <li class="main_menu bg-darkIndigo"><a href="menu.html"><img src="menu_icons/menu.png" alt=""><br>Меню</a></li>
-                        <li class="main_menu bg-cyan"><a href="photo-galery.html"><img src="menu_icons/photos.png" alt=""><br>Галерея</a></li>
-                        <li class="main_menu bg-emerald"><a href="vacancy.html"><img src="menu_icons/vacancy.png" alt=""><br>Вакансии</a></li>
-                        <li class="main_menu bg-yellow"><a href="contacts.html"><img src="menu_icons/contact2.png" alt=""><br>Контакты</a></li>
+                            
+                        <li data-flexorder="2" class="main_menu bg-darkMagenta"><a href="rules.html"><img src="menu_icons/rules.png" alt=""><br>Правила</a></li>
+                        <li data-flexorder="3" class="main_menu bg-darkIndigo"><a href="menu.html"><img src="menu_icons/menu.png" alt=""><br>Меню</a></li>
+                        <li data-flexorder="5" class="main_menu bg-cyan"><a href="photo-galery.html"><img src="menu_icons/photos.png" alt=""><br>Галерея</a></li>
+                        <li data-flexorder="6" class="main_menu bg-emerald"><a href="vacancy.html"><img src="menu_icons/vacancy.png" alt=""><br>Вакансии</a></li>
+                        <li data-flexorder="7" class="no-flexible main_menu bg-yellow"><a href="contacts.html"><img src="menu_icons/contact2.png" alt=""><br>Контакты</a></li>
                         
                     </ul>
                 </div>

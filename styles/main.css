@@ -1,0 +1,21 @@
+body{
+	background-position: 10% 10%;
+	background-image: url('/images/girl9.jpg') !important;
+}
+@media  (min-width: 801px ){
+	body{
+		background-size: 100% !important;
+	}
+}
+@media (max-width: 800px) and (min-width: 501px) {
+	body{
+		background-size: 170% !important;
+		background-repeat: repeat-y;
+	}
+}
+@media (max-width: 500px)  {
+	body{
+		background-size: 200% !important;
+		background-repeat: repeat-y;
+	}
+}

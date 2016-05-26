@@ -1,10 +1,39 @@
 body{
-	min-width: 300px;
+  background-image: url('/images/mozart_back1.jpg');
+}
+@media  (min-width: 1001px){ 
+	body{
+		background-size: 110% !important;
+	}
+	
+}
+@media (max-width: 1000px ) and (min-width: 801px ){
+	body{
+		background-size: 170% !important;
+	}
+}
+@media (max-width: 800px) and (min-width: 501px) {
+	body{
+		background-size: 200% !important;
+		
+	}
+}
+@media (max-width: 500px)  {
+	body{
+		background-size: 280% !important;
+		
+	}
+}
+
+body{
+	min-width: 320px;
 	background-color: black;
 	background-repeat: repeat-y;
-	background-position: 10% 10%;
-	background-image: url('/images/girl9.jpg');
 	background-attachment: fixed;
+	font-family: "book antiqua", "bookman old style" !important;
+}
+*{
+	font-family: "book antiqua", "bookman old style" !important;
 }
 
 @media  (min-width: 801px ){
@@ -83,18 +112,33 @@ body{
 	
 }
 .main_menu ul li a{
-	background-color: rgba(255, 255, 255, 0.0) !important;
+	border: 1px solid rgb(206,53,44);
+}
+.main_menu ul li a:hover{
+	background-color: rgb(206,53,44) !important;
 }
 .main_menu ul li:hover {
 	color: black;
 	background-color: rgba(0, 0, 0, 0.5) !important;
 }
 .main_menu ul{
-		
+	
 }
 .main_menu ul li{
-	margin-top: 1px;
-	background-color: black;
+	padding: 2px;
+	
+}
+
+.events_menu ul li a{
+	background-color: rgba(216,53,44,0.6) !important;
+	color: white !important;
+}
+.events_menu ul li a:hover{
+	background-color: rgba(216,53,44,0.9) !important;
+	color: white !important;
+}
+.events_menu ul li{
+	background-color: rgba(0, 0, 0, 0.8) !important;
 }
 
 @media  (min-width: 801px ) {
@@ -117,7 +161,7 @@ body{
 			width: 50% !important;
 		}
 		.main_menu ul{
-			margin-left: -50px !important;
+			/*margin-left: -50px !important;*/
 		}
 		
 		.main_menu ul li a{
@@ -134,8 +178,11 @@ body{
 			transition: transform 0.7s;
 			transform: rotateY( 180deg );
 		}
-		a.dropdown-toggle::before{
+		.main_menu a.dropdown-toggle::before{
 			display: none !important;
+		}
+		.events_menu a.dropdown-toggle::before{
+			display: block !important;
 		}
 }
 
@@ -154,8 +201,92 @@ body{
 	
 }
 
+
+/*arrow for scroll up page*/
+#top{
+	bottom: 0;
+	cursor: pointer;
+	display: none;
+	font-size: 250%;
+	position: fixed;
+	color: white;
+	right: 0;
+	margin-right: 6%;
+	margin-bottom: 40px;
+	z-index: 100000;
+}
+
+.basic_block{
+	margin-top: 40px !important;
+	margin-left: 4% !important;
+	margin-right: 4% !important;
+	background-color: rgba(0, 0, 0, 0.5);
+}
 .chapters{
 	font-size: 30px;
 	margin-top: 50px;
 	color: white;
+	font-family: "book antiqua", "bookman old style" !important;
+}
+
+
+//library - galery
+/* Glisse: Overlay */
+#glisse-overlay {
+    background: rgba(0,0,0.3);
+}
+
+#glisse-close {
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    position: fixed;
+    background-image: url('../menu_icons/close.png');
+    background-size: 100%;
+    top:20px;
+    right:30px;
+    background-color: black;
+}
+
+
+
+/* Prev/Next button */
+.glisse-next a, .glisse-prev a {
+    width: 40px;
+    height: 40px;
+    display: block;
+    position: fixed;
+    color: white;
+    font-size: 20px;
+    bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.glisse-next a {
+    left: 50%;
+    margin-left: 20px; 
+}
+
+.glisse-prev a {
+  left: 50%;
+  margin-left: -40px; 
+}
+
+/* Legend */
+.glisse-legend {
+  position:fixed;
+  display:block;
+  bottom:10px;
+  left:10px;
+  color:white;
+  background:blue; 
+}
+#glisse-download_image{
+    position:fixed;
+    display:block;
+    top: 30px;
+    left:30px;
+    color:white;
+    font-size: 18px;
+    text-decoration: underline;
 }

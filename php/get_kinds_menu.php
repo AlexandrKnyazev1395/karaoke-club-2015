@@ -1,8 +1,6 @@
 <?php
 
-	mysql_connect("localhost", "root", "") or die (mysql_error ());
-	// Выбрать БД
-	mysql_select_db("mozart") or die(mysql_error());
+	include "my_db.php";
 
 	$get_kinds_menu = "SELECT *
  	FROM m_kind_menu ORDER BY id_kind";

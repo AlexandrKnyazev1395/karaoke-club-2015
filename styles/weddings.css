@@ -1,0 +1,113 @@
+
+#weddings_block{
+	background-color: rgba(0, 0, 0, 0.65);
+}
+#weddings_info{
+	margin-left: 3%;
+	margin-right: 3%;
+}
+#weddings_info p{
+	font-size: 18px;
+	color: white;
+	text-indent: 30px;
+	line-height: 1.6;
+	clear: both;
+}
+#weddings_info ul{
+	font-size: 18px;
+	color: white;
+	text-indent: 30px;
+	line-height: 1.6;
+	list-style-position: inside;
+}
+#weddings_info ul{
+	font-size: 18px;
+	color: white;
+	text-indent: 30px;
+	line-height: 1.6;
+	list-style-position: inside;
+}
+#weddings_info .we_suggest li:first-child{
+	list-style-type: none;
+}
+
+.all_weddings{
+    padding-top: 0px;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+.all_weddings li{
+    float: left;
+    width: 25%;
+    min-width: 230px;
+    height: 190px;
+    margin-left: 3%;
+    margin-top: 20px;
+    vertical-align: top;
+    background-color: rgba(0, 0, 0, 0.6);
+    list-style-type: none;
+}
+.main_photo{
+    height: 78%;
+    background-size: cover;
+}
+.all_weddings li:hover{
+    cursor: pointer;
+    transform: scale(1.03);
+}
+.all_weddings img{
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 230px;
+}
+.all_weddings h3{
+    text-align: center;
+    color: white;
+    font-size: 17px;
+    font-weight: 400;
+}
+@media  (max-width: 1100px ){
+    .all_weddings h3{
+        font-size: 14px;
+    }
+}
+
+.one_wedding_photos img:hover, .style_photo_event_usual img:hover{
+    opacity: 0.9;
+}
+.one_wedding_photos li, .style_photo_event_usual li{
+    width: 250px;
+    height: 170px;
+    margin-left: 2px;
+    float: left;
+    list-style-type: none;
+    cursor: pointer;
+}
+.one_wedding_photos li:last-child,.style_photo_event_usual li:last-child{
+    margin-bottom: 20px;
+}
+.to_main_galery{
+    display: none;
+    position: relative;
+    margin-left: 50px;
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+}
+.to_main_galery:hover{
+    color: rgba(255, 255, 255, 1)
+}
+.interior_photos{
+    padding: 0px;
+    
+}
+.interior_photos li{
+    width: 50%;
+    min-width: 300px;
+    margin: 0 auto;
+    margin-top: 30px;
+    list-style-type: none;
+}
+.interior_photos li img{
+    
+}

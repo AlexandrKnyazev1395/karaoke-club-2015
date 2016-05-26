@@ -1,0 +1,33 @@
+#events_admin{
+    margin-left: 4%;
+}
+
+.input-control{
+    
+}
+form{
+	width: 700px;
+	border: 1px solid grey;
+	padding: 30px;
+}
+form li{
+	width: 90%;
+	margin-top: 20px;
+	list-style-type: none;
+	padding-bottom: 20px;
+	border-bottom: 1px dashed black;
+}
+form li .input-control{
+	width: 70% !important;
+}
+.description_input{
+	margin: 0px;
+	padding-top: 3px;
+}
+#to_next_string{
+	display: block;
+	width: 70% !important;
+	
+	cursor: pointer;
+
+}

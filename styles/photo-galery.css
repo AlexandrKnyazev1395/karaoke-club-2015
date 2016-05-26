@@ -1,65 +1,91 @@
-body{
-  background-image: url('/images/mozart_back.jpg');
-}
+
 .photos{cursor:pointer;}
-
-/* Glisse: Overlay */
-#glisse-overlay {
-    background: rgba(0,0,0.3);
+#galery_block{
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 40px !important;
+    margin-left: 4% !important;
+    margin-right: 4% !important;
 }
-
-#glisse-close {
-    height: 40px;
-    width: 40px;
-    text-align: center;
-    position: fixed;
-    background-image: url('../menu_icons/close.png');
-    background-size: 100%;
-    top:40px;
-    right:40px;
-    background-color: black;
-}
-
-
-
-/* Prev/Next button */
-.glisse-next a, .glisse-prev a {
-    width: 40px;
-    height: 40px;
-    display: block;
-    position: fixed;
+#galery_header a{
     color: white;
-    font-size: 20px;
-    bottom: 10px;
-    background-color: rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid white;
+}
+#galery_header a:hover{
+    color: blue;
 }
 
-.glisse-next a {
-    left: 50%;
-    margin-left: 20px; 
+.all_events{
+    padding-top: 0px;
+    padding-left: 3%;
+    padding-right: 3%;
 }
-
-.glisse-prev a {
-  left: 50%;
-  margin-left: -40px; 
-}
-
-/* Legend */
-.glisse-legend {
-  position:fixed;
-  display:block;
-  bottom:10px;
-  left:10px;
-  color:white;
-  background:blue; 
-}
-#galery_block li{
-   display: inline-block;
-}
-
-#galery_block img{
-    border-radius: 10px;
+.all_events li{
+    display: inline-block;
+    width: 22%;
+    min-width: 230px;
     height: 200px;
+    margin-left: 3%;
+    margin-top: 20px;
+    vertical-align: top;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-repeat: no-repeat;
+    list-style-type: none;
+    opacity: 0.93;
+}
+.main_photo{
+    height: 165px;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+.all_events li:hover{
+    cursor: pointer;
+    opacity: 1;
+    transform: scale(1.03);
+}
+.all_events img{
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 230px;
+}
+.all_events h3{
+    text-align: center;
+    color: white;
+    font-size: 17px;
+    font-weight: 400;
+}
+@media  (max-width: 1100px ){
+    .all_events h3{
+        font-size: 14px;
+    }
+}
+.one_event_photos{
+    padding-bottom: 50px;
+}
+.one_event_photos img{
     cursor: pointer;
 }
+.one_event_photos img:hover{
+    opacity: 0.9;
+}
+.one_event_photos li{
+    width: 250px;
+    height: 170px;
+    margin-left: 2px;
+    display: inline-block;
+    list-style-type: none;
+}
+
+.to_main_galery{
+    display: none;
+    position: relative;
+    margin-left: 50px;
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+}
+.to_main_galery:hover{
+    color: rgba(255, 255, 255, 1)
+}
+
+
 

@@ -1,44 +1,105 @@
 body{
+	max-width: 2500px;
 	background-image: url('/images/mozart_back.jpg');
 }
-#menu_block{
-	margin-top: 40px !important;
-	margin-left: 4% !important;
-	margin-right: 4% !important;
-	background-color: rgba(0, 0, 0, 0.5);
+@media  (min-width: 1001px){ 
+	body{
+		background-size: 110% !important;
+	}
+	
 }
-
+@media (max-width: 1000px ) and (min-width: 801px ){
+	body{
+		background-size: 170% !important;
+	}
+}
+@media (max-width: 800px) and (min-width: 501px) {
+	body{
+		background-size: 200% !important;
+		
+	}
+}
+@media (max-width: 500px)  {
+	body{
+		background-size: 280% !important;
+		
+	}
+}
 #menu_book{
+	margin-left: 4%;
+	width: 60%;
+	float: left;
 	margin-top: 30px;
 	min-height: 400px;
+	min-width: 550px;
 	background-image: url('/menu/book.png');
 	background-size: 100% 100%;
 }
+@media  (max-width: 750px ) {
+	#menu_book{
+		min-width: 320px;
+		margin-top: 0px;
+		min-height: 400px;
+		background-image: url('/menu/book_little.png');
+	} 	
+}
 
 #list_menu{
+	float: right;
+	margin-right: 7%;
+	margin-top: 80px;
 	padding: 10px;
-	width: 38%;
-	margin-top: 20px;
+	width: 42%;
 	list-style-type: none;
 	font-family: "book antiqua", "bookman old style" !important;
 }
 #list_menu li{
-
-	padding-top: 8px;
-	padding-bottom: 4px;
+	padding-top: 12px;
+	padding-bottom: 8px;
 	padding-left: 10px;
 	margin-bottom: 20px;
-	font-size: 20px;
+	font-size: 18px;
 	cursor: pointer;
 	border-bottom: 1px solid rgb(55,12,0);
+}
+@media  (max-width: 750px ) {
+	#list_menu{
+		float: left;
+		margin-left: 7%;
+		margin-top: 80px;
+		width: 70%;
+	} 	
+}
+
+@media  (max-width: 1200px ) { 
+	#list_menu li{
+		font-size: 15px;
+	}
 }
 #list_menu li:hover{
 	background-color: rgba(0, 0, 0, 0.2)
 }
-#list_menu li a{
+#list_menu li{
 	color: rgb(55,12,0); 
 }
+#list_menu li a{
+	float: right;
+	border-radius: 5px;
+	margin-right: 10px;
+	color: rgb(55,12,0); 
+}
+#list_menu li a:hover{
+	background-color: rgb(55,12,0);
+	color: white;
+}
 
+#menu_contacts_block{
+	float: left;
+	margin-left: 4%;
+	width: 30%;
+	min-width: 300px;
+	
+}
 #menu_contact_information{
 	margin-top: 60px;
 	padding-left: 20px !important;
@@ -46,10 +107,13 @@ body{
 }
 
 #menu_contact_information li{
+	font-size: 16px;
 	margin-top: 10px;
 	list-style-type: none;
 	color: white;
 }
+
+	
 #menu_contact_information li a{
 	color: white;
 }
@@ -73,6 +137,13 @@ body{
 	border-radius: 5px;
 	width: 40px;
 }
+@media  (max-width: 1000px ) { 
+	#menu_socials li img{
+		border-radius: 5px;
+		width: 30px;
+	}
+	
+}
 #link_map{
 	text-decoration: underline;
 }
@@ -80,14 +151,40 @@ body{
 	padding-left: 25px !important;
 	text-decoration: underline;
 }
-#top{
-	bottom: 0;
-	cursor: pointer;
-	display: none;
-	font-size: 250%;
-	position: fixed;
-	color: white;
-	right: 0;
-	margin-right: 6%;
-	margin-bottom: 40px;
+.choosed_menu{
+	clear: both;
+	width: 90%;
+	margin: 0 auto;
+}
+	
+.choosed_menu ul{
+	width: 100%;
+	padding: 0px;
+	margin: 0 auto;
+}
+.choosed_menu li{
+	width: 100%;
+}
+.choosed_menu img{
+	width: 60%;
+	margin-left: 20%;
+}
+@media  (min-width: 1400px ) and (max-width:190px) { 
+	.choosed_menu img{
+		width: 50%;
+		margin-left: 25%;
+	}
+}
+@media  (min-width: 1901px ) { 
+	.choosed_menu img{
+		width: 40%;
+		margin-left: 30%;
+	}
+}
+@media  (max-width: 1000px ) { 
+	.choosed_menu img{
+		width: 90%;
+		margin-left: 5%;
+	}
+	
 }

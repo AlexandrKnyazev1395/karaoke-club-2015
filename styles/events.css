@@ -1,7 +1,10 @@
-/*
+body{
+	background-position: 10% 10%;
+	background-image: url('/images/girl9.jpg') !important;
+}
 @media  (min-width: 801px ){
 	body{
-		background-size: 140% !important;
+		background-size: 100% !important;
 	}
 }
 @media (max-width: 800px) and (min-width: 501px) {
@@ -15,15 +18,9 @@
 		background-size: 200% !important;
 		background-repeat: repeat-y;
 	}
-}*/
-
-#events_block{
-	margin-top: 40px !important;
-	margin-left: 4% !important;
-	margin-right: 4% !important;
-	background-color: rgba(0, 0, 0, 0.5);
-	
 }
+
+
 #events_block h1{
 	font-weight: 400;
 	font-size: 30px;
@@ -66,10 +63,12 @@
 
 
 #events_block h2{
+	font-family: "book antiqua", "bookman old style" !important;
 	color: white;
 	font-weight: 400;
 }
 #events_block p{
+	font-family: "book antiqua", "bookman old style" !important;
 	margin-top: 20px;
 	font-size: 18px;
 	font-weight: 400;
@@ -79,8 +78,8 @@
 #events_block img{
 	margin-top: 25px;
 	margin-bottom: 25px;
-	text-align: center;
-	
+	max-height: 600px;
+	clear: both;
 }
 
 
@@ -99,15 +98,13 @@
 	}
 }
 .event_date{
-	margin-top: -10px;
-	float: right;
 	color: white;
 	font-size: 15px;
 	letter-spacing: 1.7px;
+	clear: both;
 }
 .event_date span{
-	margin-top: -3px;
-	margin-right: 6px;
+	
 }
 
 #show_calendar_button{

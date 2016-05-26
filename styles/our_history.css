@@ -1,0 +1,41 @@
+#history_block{
+	background-color: rgba(0, 0, 0, 0.65);
+}
+#history_info{
+	margin-left: 3%;
+	margin-right: 3%;
+}
+#history_info p{
+	font-size: 18px;
+	color: white;
+	text-indent: 30px;
+	line-height: 1.6;
+}
+#history_info h2{
+	font-size: 18px;
+	color: white;
+	text-indent: 30px;
+}
+
+#our_team li{
+	width: 20%;
+	min-width: 250px;
+	list-style-type: none;
+	display: inline-block;
+}
+#our_team li img:hover{
+	
+}
+
+#our_team li span{
+	width: 100%;
+	display: block;
+	color: white;
+}
+#our_team li .name{
+	margin-top: 10px;
+	text-transform: uppercase;
+}
+.second_portret{
+	display: none;
+}

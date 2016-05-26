@@ -14,6 +14,7 @@ $(document).ready(function($) {
     load_content_page();
     load_events_dates();
     load_events();
+    add_arrow_up(); // стрелка вверх при прокрутке страницы вниз
 });
 
 
@@ -47,7 +48,7 @@ function load_events_dates(){
                 create_calendar();
             },
             error: function(log) { //If all bad
-                alert("Извините, но что-то на сайте пошло не так, исправим!")                   
+                                
             },
 
     });
@@ -95,7 +96,7 @@ function load_events(){
                     var month_ev = (date_ev.getMonth()+1);
                     if(month_ev<10)
                         month_ev = "0" +month_ev;
-                    current_event.children('.event_date').append("" + day_ev +"-"+ month_ev +
+                    current_event.children('div').children('.event_date').append("" + day_ev +"-"+ month_ev +
                         "-" + date_ev.getFullYear() + " , " + 
                         result[i].time_event.substr(0, result[i].time_event.length - 3));
                     current_event.children('.poster_event').attr('src', '/posters/'+ result[i].poster_event + '');
@@ -103,7 +104,7 @@ function load_events(){
                 }
             },
             error: function(log) { //If all bad
-                alert("Извините, но что-то на сайте пошло не так, исправим!")                   
+                                 
             },
 
     });
@@ -312,3 +313,19 @@ $('body').on('click', '.evented_date', function(event) {
     var id_event = $(this).attr('id');
     window.location.href = "events.html?id_event="+id_event+"";
 });
+
+function add_arrow_up () {
+    var top_show = 750; // В каком положении полосы прокрутки начинать показ кнопки "Наверх"
+    var delay = 1000; // Задержка прокрутки
+    $(window).scroll(function () { // При прокрутке попадаем в эту функцию
+        /* В зависимости от положения полосы прокрукти и значения top_show, скрываем или открываем кнопку "Наверх" */
+        if ($(this).scrollTop() > top_show) $('#top').fadeIn();
+        else $('#top').fadeOut();
+    });
+    $('#top').click(function () { // При клике по кнопке "Наверх" попадаем в эту функцию
+      /* Плавная прокрутка наверх */
+      $('body, html').animate({
+        scrollTop: 200
+      }, delay);
+    });
+}
